@@ -1,4 +1,4 @@
-##Thrillo
+<h1>Thrillo</h1>
 
 `Thrillo is a web project created originally by Jonas S. and recreated by me`
 
