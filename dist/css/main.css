@@ -280,6 +280,50 @@ body {
     .recommend__photo:not(:last-child) {
       margin-right: -1.2rem; }
 
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden; }
+  .review__text {
+    z-index: 10;
+    position: relative; }
+  .review__user {
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem; }
+  .review__photo {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%; }
+  .review__user-box {
+    margin-right: auto;
+    margin-left: 2rem; }
+  .review__user-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem; }
+  .review__user-date {
+    font-size: 1rem;
+    color: var(--color-grey-dark-3); }
+  .review__rating {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--color-primary); }
+  .review::before {
+    content: '\201C';
+    position: absolute;
+    top: -1rem;
+    left: 0rem;
+    line-height: 1;
+    font-size: 12rem;
+    color: var(--color-grey-light-3);
+    font-family: sans-serif;
+    z-index: 1; }
+
 .container {
   max-width: 120rem;
   margin: 5rem auto;
@@ -314,17 +358,15 @@ body {
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-3);
-  border-bottom: var(--line); }
+  border-bottom: var(--line);
+  font-size: 1.4rem; }
 
 .description {
   flex: 0 0 60%;
   background-color: #fff;
   margin-right: 4.5rem;
   box-shadow: var(--shadow-light);
-  padding: 2rem;
-  font-size: 1.4rem; }
+  padding: 2rem; }
 
 .user-reviews {
-  flex: 1;
-  background-color: #fff;
-  box-shadow: var(--shadow-light); }
+  flex: 1; }

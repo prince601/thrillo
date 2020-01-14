@@ -360,7 +360,6 @@
 
   &__count {
     margin-right: auto;
-    // margin-right: 2rem !important;
   }
 
   &__photo {
@@ -373,5 +372,67 @@
     &:not(:last-child) {
       margin-right: -1.2rem;
     }
+  }
+}
+
+/////////////////////////////////////
+//REVIEWS
+
+.review {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
+  &__text {
+    z-index: 10;
+    position: relative;
+  }
+  &__user {
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+  }
+
+  &__photo {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+  }
+
+  &__user-box {
+    margin-right: auto;
+    margin-left: 2rem;
+  }
+
+  &__user-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+
+  &__user-date {
+    font-size: 1rem;
+    color: var(--color-grey-dark-3);
+  }
+
+  &__rating {
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: var(--color-primary);
+  }
+
+  &::before {
+    content: '\201C';
+    position: absolute;
+    top: -1rem;
+    left: 0rem;
+    line-height: 1;
+    font-size: 12rem;
+    color: var(--color-grey-light-3);
+    font-family: sans-serif;
+    z-index: 1;
   }
 }

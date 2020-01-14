@@ -1,4 +1,9 @@
 let uiYear = document.querySelector('#year');
-let currentYear = new Date().getFullYear();
+let uiUserDate = document.querySelector('#userDate');
 
-uiYear.textContent = `${currentYear}`;
+let date = new Date();
+
+
+
+uiYear.textContent = `${date.getFullYear()}`;
+// uiUserDate.textContent = `${date}`
