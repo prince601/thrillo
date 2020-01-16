@@ -54,5 +54,8 @@
 
 .user-reviews {
   flex: 1;
-  // box-shadow: var(--shadow-light);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
