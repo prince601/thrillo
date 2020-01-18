@@ -5,11 +5,10 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass -w scss/ -o dist/css/ --recursive",
-
-    "compile:sass": "node-sass scss/main.scss css/main.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/main.comp.css -o css/main.prefix.css",
-    "compress:css": "node-sass css/main.prefix.css css/main.min.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:sass compress:css"
+    "compile:sass": "node-sass scss/main.scss dist/css/main.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' dist/css/main.comp.css  dist/css/main.prefix.css",
+    "compress:css": "node-sass dist/css/main.comp.css dist/css/main.min.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
   },
   "repository": {
     "type": "git",
